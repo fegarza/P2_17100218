@@ -1,7 +1,7 @@
 # Datos del alumno
 
-## Instituto tencologico de Nuevo Laredo
+## Instituto Tencológico De Nuevo Laredo
 
 ### Alumno: Juan Felipe Garza Sánchez
-### Numero de control: 17100218
+### Número de control: 17100218
 
