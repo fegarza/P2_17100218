@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+    <style type="text/css">
+        .row div {
+
+            padding: 10px;
+        }
+    </style>
+   
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+
+                <label>Valor inicial</label>
+                <input type="text" class="form-control" placeholder="Ingrese el valor" id="inicial">
+            </div>
+            <div class="col-sm-6">
+                <label>Valor final</label>
+                <input type="text" class="form-control" placeholder="Ingrese el valor" id="final">
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <label>Valor final</label>
+                <input type="text" class="form-control form-block" placeholder="Ingrese el valor">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button onclick="generar()" class="btn btn-primary btn-block">GENERAR</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label>
+                    Sucesion:
+                </label>
+                <textarea class="form-control"></textarea>
+            </div>
+        </div>
+
+    </div>
+</body></html>
+ <script type="text/javascript">
+        var inicial = document.getElementById("inicial").get;
+     function generar(){
+          alert(inicial);
+     }
+    
+    </script>
