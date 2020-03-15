@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Document</title>
     <style type="text/css">
-        .row div {
+        .row div{
 
             padding: 10px;
         }
@@ -17,22 +17,26 @@
 
 
 <body>
+  
+    
     <div class="container">
+         
+            <h1 class="display-5">Serie de fibonacci</h1>
+       
         <div class="row">
             <div class="col-sm-6">
-
                 <label>Valor inicial</label>
-                <input type="text" class="form-control" placeholder="Ingrese el valor" id="inicial">
+                <input type="text" class="form-control" placeholder="Ingrese el valor" id="inicial" value="">
             </div>
             <div class="col-sm-6">
-                <label>Valor final</label>
-                <input type="text" class="form-control" placeholder="Ingrese el valor" id="final">
+                <label>Segundo valor inicial</label>
+                <input type="text" class="form-control" placeholder="Ingrese el valor" id="inicial2">
             </div>
         </div>
         <div class="row">
             <div>
                 <label>Valor final</label>
-                <input type="text" class="form-control form-block" placeholder="Ingrese el valor">
+                <input type="text" class="form-control form-block" placeholder="Ingrese el valor" id="cantidad">
             </div>
         </div>
         <div class="row">
@@ -45,16 +49,31 @@
                 <label>
                     Sucesion:
                 </label>
-                <textarea class="form-control"></textarea>
+                <textarea class="form-control" id="result"></textarea>
             </div>
         </div>
-
     </div>
 </body></html>
  <script type="text/javascript">
-        var inicial = document.getElementById("inicial").get;
+    
      function generar(){
-          alert(inicial);
+        var inicial = parseInt(document.getElementById("inicial").value);
+        var inicial2 = parseInt(document.getElementById("inicial2").value);
+        var cantidad = parseInt(document.getElementById("cantidad").value);
+        var resultado = 0;
+
+        for(var x = 1; x <= cantidad; x++){
+            resultado =  inicial + inicial2;
+            console.log("Inicial: "+ inicial + " inicial2: "+ inicial2 + " resultado:" + resultado);
+            inicial = inicial2;
+            inicial2 = resultado;
+            if(x == cantidad){
+                document.getElementById("result").textContent+=(resultado);
+            }else{
+                document.getElementById("result").textContent+=(resultado + ", ");
+            }
+           
+        }
      }
     
     </script>
