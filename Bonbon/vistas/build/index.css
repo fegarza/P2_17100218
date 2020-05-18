@@ -1,0 +1,250 @@
+/* Variables */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.cont {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#cover {
+  background-color: #ff9e80;
+  height: 400px;
+  color: #fff;
+}
+
+#cover #sartencio {
+  width: 10em;
+  margin-left: 600px;
+  margin-top: -130px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav #logo {
+  width: 12em;
+  margin-top: 2px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li {
+  font-weight: 700;
+  margin: 0 1rem;
+}
+
+.convtent {
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 100px auto;
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.convtent #mini {
+  font-size: 0.3em;
+  color: #263238;
+}
+
+#curve {
+  margin-top: -5em;
+  width: 100%;
+}
+
+#curve path {
+  fill: #ff9e80;
+}
+
+#acerca {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 60px;
+  margin-right: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 6em;
+  font-weight: 800;
+  text-align: center;
+  font-size: 1rem;
+  color: #263238;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#acerca #titulo {
+  font-size: 2.5rem;
+  margin-top: 160px;
+}
+
+#acerca #acerca1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 150px;
+  margin-top: 40px;
+}
+
+#acerca #acerca1 img:nth-child(1) {
+  width: 140%;
+}
+
+#acerca #acerca1 #texto1 {
+  padding-right: 150px;
+  padding-left: 150px;
+  padding-top: 70px;
+}
+
+#acerca #acerca2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 110px;
+  margin-top: 60px;
+}
+
+#acerca #acerca2 img:nth-child(2) {
+  width: 150%;
+}
+
+#acerca #acerca2 #texto2 {
+  padding-top: 90px;
+}
+
+#acerca #creds {
+  margin-top: 65px;
+}
+
+/*lo de atras*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+
+/* form */
+.modal-content {
+  background-color: #fff;
+  margin: 5px auto;
+  border: 1px solid #888;
+  width: 42%;
+  height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal-content .imgcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 30%;
+  margin-left: 38%;
+  margin-top: 15%;
+}
+
+.modal-content .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=index.css.map */
